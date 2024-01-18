@@ -1,0 +1,95 @@
+<header>
+    <nav class="navbar navbar-expand-xxl bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="width: 250px; height: 50px;">
+                <img src="img/logo-appwrapper.png" class="w-75" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-bars"></i> Danh mục
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="dm in listDanhMuc">
+                                <a class="dropdown-item pb-2 pt-2" href="chototxe.html" target="_blank">
+                                    <span>
+                                        <img src="img/{{dm.image}}" width="25px" alt="">
+                                    </span>
+                                    <span>
+                                        {{dm.name}}
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <div class="input-group pe-5" style="width: 700px;">
+                        <input ng-model="keyword" ng-change="timkiem(keyword)" type="text" class="form-control"
+                            placeholder="Tìm kiếm" aria-label="Input group example" aria-describedby="btnGroupAddon"
+                            ng-model-options="{debounce: 1000}">
+                        <!-- <button type="button" class="btn btn-default input-group-text" id="btnGroupAddon"
+                            style="background-color: #FF8800;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button> -->
+                    </div>
+                    <li class="nav-item pe-4 m-auto">
+                        <a href="" class="nav-link"><i class="fa-regular fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item pe-4 m-auto">
+                        <a href="" class="nav-link position-relative">
+                            <i class="fa-regular fa-comments"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                99+
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item pe-4 m-auto">
+                        <a href="#!cart" class="nav-link position-relative">
+                            <i class="fa-regular fa-money-bill-1"></i>
+                            <span ng-show="countPro > 0"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                {{countPro}}
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item pe-4 m-auto">
+                        <a href="" class="nav-link"><i class="fa-regular fa-newspaper"></i> Quản lý tin</a>
+                    </li>
+                    <li class="nav-item pe-4 m-auto dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-regular fa-user"></i> Tài khoản
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <button class="dropdown-item pb-2 pt-2" data-bs-target="#exampleModalToggle"
+                                    data-bs-toggle="modal">
+                                    <span>
+                                        <img src="img/default_user.png" alt="" style="width: 40px;"> Đăng nhập/Đăng ký
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item rounded ps-3 pe-3" style="background-color: #FF8800;">
+                        <a class="nav-link fw-bold text-uppercase" href="#" style="color: white;">
+                            <i class="fa-solid fa-up-right-from-square"></i> Đăng tin
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div ng-include="'component/dangnhap.html'">
+
+</div>

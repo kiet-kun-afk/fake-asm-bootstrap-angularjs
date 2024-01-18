@@ -1,0 +1,99 @@
+<div class="container-sm pt-2 pb-2 bg-white rounded">
+    <div ng-include="'component/carousel.html'">
+
+    </div>
+    <div class="pt-2">
+        <div class="ds-danh-muc d-flex justify-content-between text-center flex-wrap">
+            <a ng-repeat="i in listSpec" href="" class="text-decoration-none text-reset">
+                <img src="img/{{i.im}}" alt="" style="width: 50px;">
+                <br>
+                {{i.texts}}
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container-sm pt-2 pb-2 mt-2 bg-white rounded">
+    <p class="fw-bold">
+        Khám phá danh mục
+    </p>
+    <div class="ds-danh-muc d-flex justify-content-between text-center flex-wrap">
+        <a ng-repeat="i in listTitle1" href="chototxe.html" class="text-decoration-none text-reset">
+            <img src="img/{{i.im}}" alt="" style="width: 100px;">
+            <br>
+            {{i.texts}}
+        </a>
+    </div>
+    <div class="ds-danh-muc d-flex justify-content-between text-center flex-wrap">
+        <a ng-repeat="i in listTitle2" href="chototxe.html" class="text-decoration-none text-reset">
+            <img src="img/{{i.im}}" alt="" style="width: 100px;">
+            <br>
+            {{i.texts}}
+        </a>
+    </div>
+</div>
+<div class="container-sm pt-2 pb-2 mt-2 bg-white rounded">
+    <div class="row">
+        <p class="col d-flex flex-row fw-bold">
+            Tin đăng dành cho bạn
+        </p>
+        <div class="col d-flex flex-row-reverse">
+            <button class="btn btn-white" ng-click="order('price', true)">
+                <i class="fa-solid fa-arrow-up fa-beat"></i>
+            </button>
+            <button class="btn btn-white" ng-click="order('price', false)">
+                <i class="fa-solid fa-arrow-down fa-beat"></i>
+            </button>
+            <button class="btn btn-white" ng-click="order('', '')">
+                <i class="fa-solid fa-spinner fa-beat"></i>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div ng-repeat="pro in listProMain | filter: keyword: false | orderBy: cot: kieu | limitTo: limit: start "
+            class="col-4 col-md-3 col-xl-2 card">
+            <div class="text-decoration-none text-reset">
+                <a href="#!sanphamchitiet/{{pro.id}}" class="text-center mx-auto d-block mt-2">
+                    <img src="img/{{pro.image}}" class="img-fluid" alt="">
+                </a>
+                <div class="row mt-1 mb-1">
+                    <div class="col d-flex">
+                        <div>
+                            <span>{{pro.name}}</span>
+                        </div>
+                        <div>
+                            <span class="fw-light">{{pro.subName}}</span>
+                        </div>
+                    </div>
+                    <div class="col d-flex flex-row-reverse">
+                        <button class="btn btn-danger" ng-click="mua(pro); demso();"><i
+                                class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-danger">{{pro.price | number : 0}} đ</h5>
+                </div>
+                <div class="d-flex">
+                    <div class="me-1 fw-light">
+                        <img src="img/{{pro.sellerImg}}" class="rounded-circle" width="20px" height="20px" alt="">
+                    </div>
+                    <div class="me-1 fw-light"><span>{{pro.time}} Giờ Trước</span></div>
+                    <div class="fw-light"><span>{{pro.address}}</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="pagination justify-content-center mt-2">
+        <li class="page-item {{(page == 1) ? 'disabled' : ''}}">
+            <a class="page-link" href="#" aria-label="Previous" ng-click="showPage(page - 1)">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li ng-repeat="p in numberOfPage" class="page-item {{page == p + 1 ? 'active' : ''}}"><a class="page-link"
+                href="#" ng-click="showPage(p + 1)">{{p + 1}}</a></li>
+        <li class="page-item {{(page == totalPage) ? 'disabled' : ''}}">
+            <a class="page-link" href="#" aria-label="Next" ng-click="showPage(page + 1)">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</div>

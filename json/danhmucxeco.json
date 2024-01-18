@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Ô tô",
+        "image": "oto.svg"
+    },
+    {
+        "name": "Xe máy",
+        "image": "xemay.svg"
+    },
+    {
+        "name": "Xe tải, xe ben",
+        "image": "xetai.svg"
+    },
+    {
+        "name": "Xe điện",
+        "image": "xedien.svg"
+    },
+    {
+        "name": "Xe đạp",
+        "image": "xedap.svg"
+    },
+    {
+        "name": "Phương tiện khác",
+        "image": "phuongtienkhac.svg"
+    },
+    {
+        "name": "Phụ tùng xe",
+        "image": "phutung.svg"
+    }
+]

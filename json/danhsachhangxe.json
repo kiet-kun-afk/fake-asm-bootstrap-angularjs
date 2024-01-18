@@ -1,0 +1,37 @@
+[
+    {
+        "image": "honda1.jpeg",
+        "name": "Honda",
+        "subname": "CITY (2023)",
+        "min": 559,
+        "max": 609
+    },
+    {
+        "image": "toyota1.jpeg",
+        "name": "Toyota",
+        "subname": "WIGO (2023)",
+        "min": 360,
+        "max": 405
+    },
+    {
+        "image": "toyota2.jpeg",
+        "name": "Toyota",
+        "subname": "VIOS (2023)",
+        "min": 479,
+        "max": 592
+    },
+    {
+        "image": "kia1.jpeg",
+        "name": "Kia",
+        "subname": "K3 (2022)",
+        "min": 619,
+        "max": 819
+    },
+    {
+        "image": "toyota3.jpeg",
+        "name": "Toyota",
+        "subname": "Hilux (2023)",
+        "min": 746,
+        "max": 936
+    }
+]

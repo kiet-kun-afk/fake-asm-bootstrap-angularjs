@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chợ tốt xe</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="myapp" ng-controller="myctrl">
+  <div ng-include="'component/thanhnavbar.html'">
+
+  </div>
+
+  <div ng-include="'component/bodyxetot.html'">
+
+  </div>
+  <div class="mt-1" ng-include="'component/footer.html'">
+
+  </div>
+  <br>
+  <div ng-include="'component/footerII.html'">
+
+  </div>
+  <div class="modal fade" id="infoWindow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-md-down">
+      <div class="modal-content">
+        <div class="modal-body container">
+          <div class="text-center"><img src="img/protected_icon.svg" width="100px" alt="">
+            <p class="m-4">Đối Tác Chợ Tốt</p>
+          </div>
+          <div class="p-4">
+            <div><span><img src="img/checkbox_selected.svg" alt=""></span><span class="ms-3">Đối Tác cam kết tình trạng
+                xe và giá đúng như mô tả</span></div>
+            <div><span><img src="img/checkbox_selected.svg" alt=""></span><span class="ms-3">Đối Tác xe đảm bảo pháp lý
+                không tranh chấp và sang tên được</span></div>
+            <div><span><img src="img/checkbox_selected.svg" alt=""></span><span class="ms-3">Chợ Tốt hỗ trợ giải quyết
+                khiếu nại phát sinh</span></div>
+          </div>
+          <div class="text-center">
+            <div><a class="text-decoration-none" href="">Tìm hiểu thêm</a></div>
+            <button type="button" class="btn btn-warning ps-5 pe-5 mt-2">Đã hiểu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/9fe08cb9b1.js" crossorigin="anonymous"></script>
+  <script src="angular.min.js"></script>
+  <script src="angular-route.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

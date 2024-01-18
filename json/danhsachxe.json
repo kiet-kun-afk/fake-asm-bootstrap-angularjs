@@ -1,0 +1,56 @@
+[
+    {
+        "image": "xeso1.jpg",
+        "name": "Hyundai Kona 1.6 Turbo 2021 Odo",
+        "subname": "2021 - Tự động - 31000 km",
+        "price": 585000000,
+        "sellerImg": "shop-verify.svg",
+        "time": 6,
+        "address": "TP Hồ Chí Minh"
+    },
+    {
+        "image": "xeso2.jpg",
+        "name": "Mazda 3 1.5AT 2020 - Màu trắng - 3v1km",
+        "subname": "2020 - Tự động - 30997 km",
+        "price": 509000000,
+        "sellerImg": "shop-verify.svg",
+        "time": 26,
+        "address": "TP Hồ Chí Minh"
+    },
+    {
+        "image": "xeso3.jpg",
+        "name": "Hyundai Elantra 1.6 Sport 2019 Độ 100tr",
+        "subname": "2019 - Tự động - 39000 km",
+        "price": 565000000,
+        "sellerImg": "shop-verify.svg",
+        "time": 27,
+        "address": "TP Hồ Chí Minh"
+    },
+    {
+        "image": "xeso4.jpg",
+        "name": "HONDA CRV-L SENSING SX2022 SIÊU LƯỚT LIKE NEW",
+        "subname": "2022 - Tự động - 9500 km",
+        "price": 929000000,
+        "sellerImg": "shop-verify.svg",
+        "time": 41,
+        "address": "TP Hồ Chí Minh"
+    },
+    {
+        "image": "xeso5.jpg",
+        "name": "Vinfast Lux A2.0 Base 2021 - Màu xanh - 3v4 km",
+        "subname": "2022 - Tự động - 9500 km",
+        "price": 575000000,
+        "sellerImg": "shop-verify.svg",
+        "time": 41,
+        "address": "TP Hồ Chí Minh"
+    },
+    {
+        "image": "xeso6.jpg",
+        "name": "Lux A2.0 Base 2022 - Đỏ 2v km - BAO SANG TÊN",
+        "subname": "2022 - Tự động - 21000 km",
+        "price": 615000000,
+        "sellerImg": "shop-verify.svg",
+        "time": 60,
+        "address": "TP Hồ Chí Minh"
+    }
+]

@@ -1,0 +1,75 @@
+<div class="bg-white rounded">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <span>
+                    <h6 class="fw-bold">TẢI ỨNG DỤNG CHỢ TỐT</h6>
+                </span>
+                <div class="row">
+                    <div class="col-4">
+                        <span>
+                            <img src="img/group-qr.jpeg" class="w-100" alt="">
+                        </span>
+                    </div>
+                    <div class="col-6">
+                        <span>
+                            <a href="" ng-repeat="i in iconFooter"><img src="img/{{i.icons}}" class="w-75" alt=""></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <span>
+                    <h6 class="fw-bold">HỖ TRỢ KHÁCH HÀNG</h6>
+                </span>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li ng-repeat="i in textHelp" class="mb-2">
+                        <a href="" class="text-decoration-none text-reset">{{i}}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <span>
+                    <h6 class="fw-bold">VỀ CHỢ TỐT</h6>
+                </span>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li ng-repeat="i in textAbout" class="mb-2"><a href="" class="text-decoration-none text-reset">{{i}}</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <span>
+                    <h6 class="fw-bold">LIÊN KẾT</h6>
+                </span>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item border-0 ps-0">
+                        <a href="https://www.facebook.com/chotot.vn" target="_blank">
+                            <i class="fa-brands fa-facebook fs-1">
+
+                            </i>
+                        </a>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <a href="https://www.youtube.com/ChototVN" class="link-danger" target="_blank">
+                            <i class="fa-solid fa-circle-play fs-1">
+
+                            </i>
+                        </a>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <a href="https://www.linkedin.com/company/cho-tot" target="_blank">
+                            <i class="fa-brands fa-linkedin fs-1">
+
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+                <span>
+                    <h6 class="fw-bold">CHỨNG NHẬN</h6>
+                </span>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item border-0 ps-0"><img src="img/certificate.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

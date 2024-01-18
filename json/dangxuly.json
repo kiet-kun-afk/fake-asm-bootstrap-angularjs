@@ -1,0 +1,22 @@
+[
+    {
+        "image": "sp1.jpg",
+        "name": "Giày Loafer Spoiled",
+        "subname": "",
+        "price": 1000000,
+        "sellerImg": "seller1.jfif",
+        "time": 13,
+        "address": "TP Hồ Chí Minh",
+        "status": true
+    },
+    {
+        "image": "xeso1.jpg",
+        "name": "Hyundai Kona 1.6 Turbo 2021 Odo",
+        "subname": "2021 - Tự động - 31000 km",
+        "price": 585000000,
+        "sellerImg": "shop-verify.svg",
+        "time": 6,
+        "address": "TP Hồ Chí Minh",
+        "status": false
+    }
+]

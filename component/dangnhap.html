@@ -1,0 +1,91 @@
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form name="checkFault">
+                    <div class="mb-3">
+                        <label for="phoneNumber1" class="form-label">Số điện thoại</label>
+                        <input name="phone1" ng-model="phone1" type="text" class="form-control" id="phoneNumber1"
+                            ng-model-options="{updateOn: 'blur'}"
+                            pattern="^(0|\+84)(\s|\.)?((3[2-9])|(5[689])|(7[06-9])|(8[1-689])|(9[0-46-9]))(\d)(\s|\.)?(\d{3})(\s|\.)?(\d{3})$">
+                        <div class="text-danger" ng-show="checkFault.phone1.$invalid">
+                            Số điện thoại không hợp lệ
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Mật khẩu</label>
+                        <input name="pass1" ng-model="pass1" type="password" class="form-control" id="inputPassword"
+                            ng-model-options="{updateOn: 'blur'}"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$">
+                        <div class="text-danger" ng-show="checkFault.pass1.$invalid">
+                            Mật khẩu tối thiểu nhất 6 ký tự, có ký tự in hoa, in thường, chữ số
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Ghi nhớ đăng nhập?</label>
+                    </div>
+                    <button ng-disabled="!(pass1 && phone1)" type="submit"
+                        class="btn btn-primary {{checkFault.$valid ? '' : 'disabled'}}">Đăng nhập</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                    Đăng ký
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <form class="needs-validation" novalidate name="checkFault2">
+                        <div class="mb-3">
+                            <label for="phoneNumber2" class="form-label">Số điện thoại</label>
+                            <input name="phone2" ng-model="phone2" type="text" class="form-control" id="phoneNumber2"
+                                ng-model-options="{updateOn: 'blur'}"
+                                pattern="^(0|\+84)(\s|\.)?((3[2-9])|(5[689])|(7[06-9])|(8[1-689])|(9[0-46-9]))(\d)(\s|\.)?(\d{3})(\s|\.)?(\d{3})$">
+                            <div class="text-danger" ng-show="checkFault2.phone2.$invalid">
+                                Số điện thoại không hợp lệ
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPassword2" class="form-label">Mật khẩu</label>
+                            <input name="pass2" ng-model="pass2" type="password" class="form-control" id="inputPassword2"
+                                ng-model-options="{updateOn: 'blur'}"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$">
+                            <div class="text-danger" ng-show="checkFault2.pass2.$invalid">
+                                Mật khẩu tối thiểu nhất 6 ký tự, có ký tự in hoa, in thường, chữ số
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword2" class="form-label">Nhập lại mật khẩu</label>
+                            <input ng-model="confirmPassword" type="password" class="form-control"
+                                id="exampleInputPassword2" ng-model-options="{updateOn: 'blur'}">
+                            <div ng-show="pass2 !== confirmPassword" class="text-danger">Mật khẩu không khớp!</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Địa chỉ email</label>
+                            <input ng-model="email" name="email" type="email" class="form-control"
+                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                ng-model-options="{updateOn: 'blur'}">
+                            <div class="text-danger" ng-show="checkFault2.email.$invalid">Email không hợp lệ</div>
+                        </div>
+                        <button ng-disabled="pass2 !== confirmPassword || !(email && pass2 && phone2)" type="submit"
+                            class="btn btn-primary {{checkFault2.$valid ? '' : 'disabled'}}">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                    Quay lại đăng nhập
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

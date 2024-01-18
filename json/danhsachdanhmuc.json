@@ -1,0 +1,54 @@
+[
+    {
+      "name": "Bất động sản",
+      "image": "icon1.png"
+    },
+    {
+      "name": "Xe cộ",
+      "image": "icon2.png"
+    },
+    {
+      "name": "Đồ điện tử",
+      "image": "icon3.png"
+    },
+    {
+      "name": "Việc làm",
+      "image": "icon4.png"
+    },
+    {
+      "name": "Thú cưng",
+      "image": "icon5.png"
+    },
+    {
+      "name": "Đồ ăn, thực phẩm",
+      "image": "icon6.png"
+    },
+    {
+      "name": "Tủ lạnh, máy lạnh, máy giặt",
+      "image": "icon7.png"
+    },
+    {
+      "name": "Đồ gia dụng, nội thất, cây cảnh",
+      "image": "icon8.png"
+    },
+    {
+      "name": "Mẹ và bé",
+      "image": "icon9.png"
+    },
+    {
+      "name": "Thời trang, đồ dùng cá nhân",
+      "image": "icon10.png"
+    },
+    {
+      "name": "Giải trí, Thể thao, Sở thích",
+      "image": "icon11.png"
+    },
+    {
+      "name": "Đồ dùng văn phòng",
+      "image": "icon12.png"
+    },
+    {
+      "name": "Dịch vụ, Du lịch",
+      "image": "icon13.png"
+    }
+  ]
